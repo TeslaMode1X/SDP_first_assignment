@@ -1,6 +1,7 @@
-package Assignment2.Facade;
+package SDP_first_assignment.src.SDP_second_assignment.Assignment2.Facade;
 import Assignment2.Bridge.DocumentRenderer;
 import Assignment2.Bridge.RenderEngine;
+import Assignment2.Bridge.SimpleDocumentRenderer;
 import Assignment2.Bridge.SimpleRenderEngine;
 import Assignment2.Decorator.WatermarkDecorator;
 import Assignment2.Document;
@@ -33,7 +34,8 @@ public class DocumentFacade {
     //Вызовите метод рендеринга в рендерере для заданного документа.
     public void renderDocument(String context, RenderEngine renderEngine) {
         Document document = DocumentFactory.getDocument(context);
-        renderEngine.render(document.getTitle());
+        DocumentRenderer renderer = new SimpleDocumentRenderer(renderEngine);
+        renderer.render(document.getTitle());
     }
 }
 

@@ -1,5 +1,6 @@
-package Assignment2.Adapter;
+package SDP_first_assignment.src.SDP_second_assignment.Assignment2.Adapter;
 
+import Assignment2.Adapter.PDFDocument;
 import Assignment2.Document;
 
 // Адаптер для интеграции PDF документа

@@ -1,4 +1,4 @@
-package Assignment2;
+package SDP_first_assignment.src.SDP_second_assignment.Assignment2;
 
 // Интерфейс документа
 public interface Document {

@@ -1,4 +1,4 @@
-package Assignment2.Proxy;
+package SDP_first_assignment.src.SDP_second_assignment.Assignment2.Proxy;
 
 import Assignment2.Document;
 import Assignment2.RealDocument;

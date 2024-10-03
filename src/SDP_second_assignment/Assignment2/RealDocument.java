@@ -1,4 +1,6 @@
-package Assignment2;
+package SDP_first_assignment.src.SDP_second_assignment.Assignment2;
+
+import Assignment2.Document;
 
 // Реальный документ, который требует загрузки
 public class RealDocument implements Document {

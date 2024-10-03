@@ -1,5 +1,6 @@
-package Assignment2.Decorator;
+package SDP_first_assignment.src.SDP_second_assignment.Assignment2.Decorator;
 
+import Assignment2.Decorator.DocumentDecorator;
 import Assignment2.Document;
 
 // Декоратор для добавления водяного знака к документу
