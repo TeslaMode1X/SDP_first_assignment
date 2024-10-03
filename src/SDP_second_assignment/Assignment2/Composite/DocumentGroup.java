@@ -1,4 +1,4 @@
-package Assignment2.Composite;
+package SDP_first_assignment.src.SDP_second_assignment.Assignment2.Composite;
 
 import Assignment2.Document;
 
@@ -21,6 +21,10 @@ public class DocumentGroup implements Document {
     @Override
     public String getTitle() {
         return null;
+    }
+
+    public void deleteDocument(String title) {
+        documents.removeIf(document -> title.equals(document.getTitle()));
     }
 
     public void addDocument(Document document) {

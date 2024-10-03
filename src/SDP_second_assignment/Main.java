@@ -1,11 +1,13 @@
+package SDP_first_assignment.src.SDP_second_assignment;
+
 import Assignment2.Adapter.PDFDocumentAdapter;
+import Assignment2.Bridge.HighlightRenderEngine;
+import Assignment2.Bridge.RenderEngine;
+import Assignment2.Bridge.SimpleRenderEngine;
 import Assignment2.Composite.DocumentGroup;
 import Assignment2.Document;
 import Assignment2.Facade.DocumentFacade;
 import Assignment2.Flyweight.DocumentFactory;
-import Assignment2.Bridge.RenderEngine;
-import Assignment2.Bridge.SimpleRenderEngine;
-import Assignment2.Bridge.HighlightRenderEngine;
 
 
 public class Main {
@@ -44,5 +46,18 @@ public class Main {
 
         RenderEngine highlightEngine = new HighlightRenderEngine();
         facade.renderDocument("Report", highlightEngine);
+
+        // Вызов всех документов
+        System.out.print("\n");
+        System.out.println("Документы до удаления");
+        group.display();
+        System.out.print("\n");
+
+        // Проверка удаления документа
+        group.deleteDocument("Report");
+
+        // Проверка удаления
+        System.out.println("Документы после удаления");
+        group.display();
     }
 }
